@@ -21,13 +21,13 @@ const getRandomChoice = () => {
 
 export default function Game() {
     const [prop, setProp] = useState(2);
-    useEffect(() => {
-        const interval = setInterval(() => {
-          setProp(prev => prev + 1);
-        }, 5000);
+    // useEffect(() => {
+    //     const interval = setInterval(() => {
+    //       setProp(prev => prev + 1);
+    //     }, 5000);
     
-        return () => clearInterval(interval); 
-      }, []);
+    //     return () => clearInterval(interval); 
+    //   }, []);
 
   const [userChoice, setUserChoice] = useState(null);
   const [computerChoice, setComputerChoice] = useState(null);

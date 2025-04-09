@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef} from 'react'
-import Game from './Game';
+// import Game from './Game';
 
 function RandomInfo() {
     const [fact, setFact] = useState("");
@@ -7,7 +7,7 @@ function RandomInfo() {
     const [seconds, setSeconds] = useState(0);
     const [running, setRunning] = useState(false);
     const intervalRef = useRef(null);
-  
+    console.log(125)
     useEffect(() => {
       if (running) {
         intervalRef.current = setInterval(() => {
@@ -82,7 +82,7 @@ function RandomInfo() {
         </div>
       </div>
 </div>
-      <Game/>
+      {/* <Game/> */}
     </>
   )
 }

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import RandomInfo from './RandomInfo';
+// import RandomInfo from './RandomInfo';
 
 function Time() {
     const [time, setTime] = useState(new Date().toLocaleTimeString());
-
+    // console.log(127)
   useEffect(() => {
     const interval = setInterval(() => {
       setTime(new Date().toLocaleTimeString());
@@ -18,7 +18,7 @@ function Time() {
     <div className="bg-gradient-to-r border-2 border-white from-blue-500 to-indigo-500 text-white text-xl font-semibold p-6 rounded-lg shadow-md text-center tracking-wide">
   🕒 Current Time: <span className="font-mono">{time}</span>
 </div>
-    <RandomInfo/>
+    {/* <RandomInfo/> */}
     </>
     
   )
